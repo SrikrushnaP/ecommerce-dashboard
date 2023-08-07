@@ -15,17 +15,99 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
   <meta name="theme-color" content="#712cf9">
 
   <!-- Custom main styles for this template -->
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="https://getbootstrap.com/docs/5.3/examples/dashboard/dashboard.css" rel="stylesheet">
+  <style>
+    .track-order .order-header {
+      border-radius: 0.25rem;
+      background-color: #c3d8f7;
+      margin-top: 0.5rem;
+    }
+
+    .track-order .order-body .sim-card .list-ic li {
+      position: relative;
+    }
+
+    .track-order .order-body .sim-card .list-ic li .ststus-box {
+      display: inline-block;
+      font-weight: 800;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      line-height: 2em;
+      border-radius: 0.25em;
+    }
+
+    .track-order .order-body .sim-card .list-ic li .ststus-box:before {
+      content: "\f096";
+      font-family: FontAwesome;
+      font-size: 25px;
+      color: #c3d8f7;
+    }
+
+    .track-order .order-body .sim-card .list-ic li .ststus-box-ed {
+      display: inline-block;
+      font-weight: 800;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      line-height: 2em;
+      border-radius: 0.25em;
+    }
+
+    .track-order .order-body .sim-card .list-ic li .ststus-box-ed:before {
+      content: "\f14a";
+      font-family: FontAwesome;
+      font-size: 25px;
+      color: #c3d8f7;
+    }
+
+    .track-order .order-body .sim-card .list-ic li .ststus-text {
+      color: #14113a;
+      padding-left: 0.5rem;
+    }
+
+    .track-order .order-body .sim-card .list-ic li::before {
+      content: "";
+      position: absolute;
+      background: #c3d8f7;
+      z-index: -1;
+    }
+
+    .track-order .order-body .sim-card .list-ic.vertical {
+      padding: 0;
+      margin: 0;
+    }
+
+    .track-order .order-body .sim-card .list-ic.vertical li {
+      list-style-type: none;
+      text-align: left;
+    }
+
+    .track-order .order-body .sim-card .list-ic.vertical li span {
+      margin: 1.4em 0;
+    }
+
+    .track-order .order-body .sim-card .list-ic.vertical li::before {
+      top: -1.9rem;
+      left: 1rem;
+      width: 0.2rem;
+      height: 3.8rem;
+    }
+
+    .track-order .order-body .sim-card .list-ic.vertical li:first-child::before {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -113,6 +195,7 @@
       <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
       <path d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z"/>
     </symbol>
+
   </svg>
   <!-- SVG icon used in this project end -->
 
@@ -169,7 +252,7 @@
 
   <!-- Navbar start from here -->
   <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="index.html">My Online Shop</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="../index.html">My Online Shop</a>
 
     <ul class="navbar-nav flex-row d-md-none">
       <li class="nav-item text-nowrap">
@@ -210,7 +293,7 @@
           <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="index.html">
+                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="../index.html">
                   <svg class="bi">
                     <use xlink:href="#house-fill" />
                   </svg>
@@ -218,7 +301,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/order-list.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="order-list.html">
                   <svg class="bi">
                     <use xlink:href="#file-earmark" />
                   </svg>
@@ -226,7 +309,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/customer-list.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="customer-list.html">
                   <svg class="bi">
                     <use xlink:href="#list-ul" />
                   </svg>
@@ -246,7 +329,7 @@
             </h6>
             <ul class="nav flex-column mb-auto">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/product-list.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="product-list.html">
                   <svg class="bi">
                     <use xlink:href="#list-ul" />
                   </svg>
@@ -254,7 +337,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/add-update-product.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="add-update-product.html">
                   <svg class="bi">
                     <use xlink:href="#cart" />
                   </svg>
@@ -274,7 +357,7 @@
             </h6>
             <ul class="nav flex-column mb-auto">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/banner-slide.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="banner-slide.html">
                   <svg class="bi">
                     <use xlink:href="#card-image" />
                   </svg>
@@ -282,7 +365,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/promotion.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="promotion.html">
                   <svg class="bi">
                     <use xlink:href="#file-earmark-image" />
                   </svg>
@@ -290,7 +373,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/coupon.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="coupon.html">
                   <svg class="bi">
                     <use xlink:href="#coin" />
                   </svg>
@@ -303,7 +386,7 @@
 
             <ul class="nav flex-column mb-auto">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/user-profile.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="user-profile.html">
                   <svg class="bi">
                     <use xlink:href="#gear-wide-connected" />
                   </svg>
@@ -311,7 +394,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="pages/admin-login.html">
+                <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi">
                     <use xlink:href="#door-closed" />
                   </svg>
@@ -331,148 +414,112 @@
           <h1 class="h2">Dashboard</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Share Order Tracking</button>
             </div>
-            <button type="button"
-              class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
-              <svg class="bi">
-                <use xlink:href="#calendar3" />
-              </svg>
-              This week
-            </button>
           </div>
         </div>
 
-        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-        <h2>Section title</h2>
-        <div class="table-responsive small">
-          <table class="table table-striped table-sm">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>random</td>
-                <td>data</td>
-                <td>placeholder</td>
-                <td>text</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>placeholder</td>
-                <td>irrelevant</td>
-                <td>visual</td>
-                <td>layout</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>data</td>
-                <td>rich</td>
-                <td>dashboard</td>
-                <td>tabular</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>information</td>
-                <td>placeholder</td>
-                <td>illustrative</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>1,004</td>
-                <td>text</td>
-                <td>random</td>
-                <td>layout</td>
-                <td>dashboard</td>
-              </tr>
-              <tr>
-                <td>1,005</td>
-                <td>dashboard</td>
-                <td>irrelevant</td>
-                <td>text</td>
-                <td>placeholder</td>
-              </tr>
-              <tr>
-                <td>1,006</td>
-                <td>dashboard</td>
-                <td>illustrative</td>
-                <td>rich</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>1,007</td>
-                <td>placeholder</td>
-                <td>tabular</td>
-                <td>information</td>
-                <td>irrelevant</td>
-              </tr>
-              <tr>
-                <td>1,008</td>
-                <td>random</td>
-                <td>data</td>
-                <td>placeholder</td>
-                <td>text</td>
-              </tr>
-              <tr>
-                <td>1,009</td>
-                <td>placeholder</td>
-                <td>irrelevant</td>
-                <td>visual</td>
-                <td>layout</td>
-              </tr>
-              <tr>
-                <td>1,010</td>
-                <td>data</td>
-                <td>rich</td>
-                <td>dashboard</td>
-                <td>tabular</td>
-              </tr>
-              <tr>
-                <td>1,011</td>
-                <td>information</td>
-                <td>placeholder</td>
-                <td>illustrative</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>1,012</td>
-                <td>text</td>
-                <td>placeholder</td>
-                <td>layout</td>
-                <td>dashboard</td>
-              </tr>
-              <tr>
-                <td>1,013</td>
-                <td>dashboard</td>
-                <td>irrelevant</td>
-                <td>text</td>
-                <td>visual</td>
-              </tr>
-              <tr>
-                <td>1,014</td>
-                <td>dashboard</td>
-                <td>illustrative</td>
-                <td>rich</td>
-                <td>data</td>
-              </tr>
-              <tr>
-                <td>1,015</td>
-                <td>random</td>
-                <td>tabular</td>
-                <td>information</td>
-                <td>text</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Modal for order status update start -->
+      <div class="modal fade" id="orderTrackingUpdateModal" tabindex="-1"
+      aria-labelledby="orderTrackingUpdateModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="orderTrackingUpdateModalLabel">Update Order Tracking</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="statusUpdate" class="form-label">Actionable Tracking Status</label>
+                <select id="statusUpdate" required class="form-select" name="orderStatus">
+                  <option>Accepted</option>
+                  <option>Packed</option>
+                  <option>Picked</option>
+                  <option>Delivered</option>
+                  <option>Verified</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Enter tracking note</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon3">Tracking Note</span>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Update</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- Modal for order status update end -->
+        <!-- Conent to be change / modify from start here -->
+        <div class="col-md-10 col-12">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-normal mb-0 text-black">Order Status</h3>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#orderTrackingUpdateModal">
+              Update Tracking Details
+            </button>
+          </div>
+          <div class="container">
+            <div class="track-order">
+              <div class="col-md-12 col-12 order-header p-2">
+                <div class="row">
+                  <div class="col-md-4 col-12">
+                    Order ID: <br>SRITHUAPR062023220528
+                  </div>
+                  <div class="col-md-4 col-12">
+                    Estimated Delivery Time:<br>
+                    7 days from order placed
+                  </div>
+                  <div class="col-md-4 col-12">
+                    Shipped With: Ecom Express<br>
+                    Tracking ID: ECOM1230BB
+                  </div>
+                </div>
+                <!-- <p><a href="../pages/orderDetails.html">See order detail</a></p> -->
+              </div>
+              <div class="col-md-12 col-12 order-body">
+                <div class="sim-card">
+                  <ul class="list-ic vertical">
+                    <li>
+                      <span class="ststus-box-ed"></span>
+                      <span class="ststus-text">
+                        Placed - Apr 6, 2023, 10:05:28 PM
+                      </span>
+                    </li>
+                    <li>
+                      <span class="ststus-box-ed"></span>
+                      <span class="ststus-text">Accepted- Apr 6, 2023 | 16:23</span>
+                    </li>
+                    <li>
+                      <span class="ststus-box-ed"></span>
+                      <span class="ststus-text">Packed- Apr 6, 2023 | 17:23</span>
+                    </li>
+                    <li>
+                      <span class="ststus-box"></span>
+                      <span class="ststus-text">Pick- Apr 6, 2023 | 05:23</span>
+                    </li>
+                    <li>
+                      <span class="ststus-box"></span>
+                      <span class="ststus-text">Deliver- Apr 7, 2023| 01:23</span>
+                    </li>
+                    <li>
+                      <span class="ststus-box"></span>
+                      <span class="ststus-text">Verify- Apr 10, 2023 | 03:23</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Conent to be change / modify ends here -->
       </main>
       <!-- Main containt Ends here -->
     </div>
