@@ -216,8 +216,8 @@
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" name="userPassword">
               </div>
-              <!-- <button type="button" class="btn btn-primary" onClick="adminLogin()">Login</button> -->
-              <a type="button" class="btn btn-primary" href="../index.html">Login</a>
+              <button type="button" class="btn btn-primary" onClick="adminLogin()">Login</button>
+              <!-- <a type="button" class="btn btn-primary" href="../index.html">Login</a> -->
               <div class="mb-3">
                 <p>Didn't rember your password? click to <a href="../pages/forgotPassword.html">Recover</a></p>
               </div>
@@ -241,8 +241,7 @@
       let userName = document.getElementById("exampleInputEmail1").value;
       let userPassword = document.getElementById("exampleInputPassword1").value;
       if(userName=="admin@mos.com" && userPassword=="Admin@123"){
-        alert("Success");
-        window.location.href("../index.html");
+        window.location.replace("../index.html");
       } else {
         alert("Provide valid user name and password")
       }

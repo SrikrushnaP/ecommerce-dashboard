@@ -41,7 +41,7 @@ Explore our demo store.
 Email: admin@mos.com<br/>
 Password: Admin@123
 
-<a href="https://srikrushnap.github.io/ecommerce-dashboard/">Static Store Font</a>
+<a href="https://srikrushnap.github.io/ecommerce-dashboard/pages/admin-login.html">Static Store Font</a>
 
 ## Support
 
